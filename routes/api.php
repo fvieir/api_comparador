@@ -16,7 +16,6 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return response()->json(["status" => "conectado"]);
 });
-
 Route::post('simular', "SimuladorController@simular");
 Route::get('instituicao', "InstituicaoController@all");
 Route::get('convenio', "ConvenioController@all");
